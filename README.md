@@ -1,2 +1,2 @@
 # Unit 1 Project Quote Generator
-#Desinged for Team Treehouse TechDegree
+#Designed for Team Treehouse TechDegree
