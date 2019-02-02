@@ -19,7 +19,7 @@ function print(message){
 
 //function to print the quote to the screen need to clear when event listener is
 
-
+//problem, need html string to clear when button is clicked
 function printQuote(){
     var randQuote = getRandomQuote();
 
@@ -28,7 +28,5 @@ function printQuote(){
   return print(message)
 }
 
+//button
 document.getElementById('loadQuote').addEventListener("click", printQuote, false);
-
-
-// Remember to delete the comments that came with this file, and replace them with your own code comments.
