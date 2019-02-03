@@ -1,5 +1,5 @@
 //Global scope variables
-var message = " ";
+
 
 
 //function to generate random number and return a quote from the quote[]
@@ -22,7 +22,7 @@ function print(message){
 //problem, need html string to clear when button is clicked
 function printQuote(){
     var randQuote = getRandomQuote();
-
+    var message = " ";
   message += "<p class='quote'>" +randQuote.quote + "</p>";
   message += "<p class='source'>" +randQuote.source + "<span class='citation'>" +randQuote.citation+ "</span></p>";
   return print(message)
