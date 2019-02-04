@@ -37,5 +37,9 @@ function printQuote(){
   return print(message)
 }
 
+//call the function to ensure quote is present when user loads page
+printQuote();
+
+
 //button
 document.getElementById('loadQuote').addEventListener("click", printQuote, false);
