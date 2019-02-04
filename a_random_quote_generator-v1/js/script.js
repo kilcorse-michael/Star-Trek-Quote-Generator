@@ -38,12 +38,16 @@ function print(message){
 //function to print the quote to the screen need to clear when event listener is
 
 function printQuote(){
+
     var randQuote = getRandomQuote();
-    var message = " ";
-  document.body.style.backgroundColor = getRandomBackground();
+    var message = ' ';
+    var randBackground = getRandomBackground();
+  document.body.style.backgroundColor = randBackground;
+  document.getElementById('loadQuote').style.backgroundColor = randBackground;
   message += "<p class='quote'>" +randQuote.quote + "</p>";
   message += "<p class='source'>" +randQuote.source + "<span class='citation'>" +randQuote.citation+ "</span></p>";
   return print(message)
+
 }
 
 //button
