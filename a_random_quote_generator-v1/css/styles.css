@@ -15,6 +15,7 @@ body {
   right: 10%;
   width: 80%;
   line-height: .5;
+
 }
 
 .quote {
@@ -71,7 +72,7 @@ body {
 }
 
 #loadQuote {
-  position: fixed;
+  position: absolute;
   width: 12em;
   display: inline-block;
   left: 50%;
@@ -81,7 +82,7 @@ body {
   border: 2px solid #fff;
   color: #fff;
   background-color: #36b55c;
-  padding: 15px 0;
+  padding: 25px 0;
   transition: .5s ;
 }
 #loadQuote:hover {

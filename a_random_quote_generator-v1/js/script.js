@@ -25,6 +25,8 @@ function print(message){
   quoteBoxDiv.innerHTML = message;
 }
 
+
+
 //function to print the quote to the screen need to clear when event listener is
 function printQuote(){
   var randQuote = getRandomQuote();
@@ -33,13 +35,27 @@ function printQuote(){
   document.body.style.backgroundColor = randBackground;
   document.getElementById('loadQuote').style.backgroundColor = randBackground;
   message += "<p class='quote'>" +randQuote.quote + "</p>";
-  message += "<p class='source'>" +randQuote.source + "<span class='citation'>" +randQuote.citation+ "</span></p>";
+  message += "<p class='source'>" +randQuote.source;
+  message += "<span class='citation'>" +randQuote.citation + "</span>"
+  for(var key in randQuote){
+    if(key === 'series'){
+      message += ", Television Series: " +randQuote.series + "</p>";
+
+    }else if(key === 'film' ){
+      message += ", Film: " +randQuote.film + "</p>";
+    }
+  }
+
+
   return print(message)
 }
+
 
 //call the function to ensure quote is present when user loads page
 printQuote();
 
+//Auto Refresh for quotes Function
+setInterval(function(){printQuote();}, 30000);
 
 //button
 document.getElementById('loadQuote').addEventListener("click", printQuote, false);
