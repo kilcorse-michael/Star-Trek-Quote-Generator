@@ -1,5 +1,17 @@
 //Array of quote objects for Unit 1 project
 
+class Quotes {
+	constructor(quote, source, citation){
+
+	this.quote = quote;
+	this.source = source;
+	this.citation = citation;
+ }
+
+}
+
+const quote1 = new Quotes("Logic is the beginning of wisdom, not the end.", "Mr. Spock", "The Undiscovered Country")
+
 var quotes = [
     {
       quote: "Logic is the beginning of wisdom, not the end.",
@@ -80,3 +92,9 @@ var quotes = [
       series: "The Next Generation"
     }
     ]
+
+
+
+
+console.log(quote1);
+

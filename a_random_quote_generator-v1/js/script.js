@@ -47,6 +47,11 @@ const printQuote = () => {
   return print(message)
 }
 
+const body = document.getElementsByTagName("body")[0];
+
+body.style.letterSpacing = "3px";
+
+
 
 //call the function to ensure quote is present when user loads page
 printQuote();
